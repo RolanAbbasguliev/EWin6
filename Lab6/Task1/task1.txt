@@ -1,0 +1,7 @@
+VER > C:\LAB6\version.txt
+chkdsk | > C:\LAB6\memory.txt
+md TEST
+C:\Users\R>copy C:\Lab6\*.txt C:\TEST
+cd C:\TEST
+copy memory.txt+version.txt result.txt
+del mem.txt version.txt

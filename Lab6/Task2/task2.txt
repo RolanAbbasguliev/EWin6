@@ -1,0 +1,12 @@
+HOSTNAME
+net use a: \\DESKTOP-JEVM15U\tmp
+
+robocopy C:\Windows\Containers A:\ /Z #task2net.psi
+powershell -executionpolicy RemoteSigned -file C:\Lab6\task2net.ps1
+
+
+timeout /t 60                          #task3net.ps1
+robocopy C:\Windows\Containers A:\ /Z  #task3net.ps1
+
+powershell -executionpolicy RemoteSigned -file C:\Lab6\task3net.ps1
+powershell -executionpolicy RemoteSigned -file C:\Lab6\task2net.ps2
